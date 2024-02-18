@@ -2,7 +2,8 @@ package com.agnieszka.mucha.httpclientwithvaadin.model;
 
 import java.util.ArrayList;
 
-public class DogBreedsResponse {
-    public ArrayList<DogBreedData> data;
-    public Links links;
+public record DogBreedsResponse(
+        ArrayList<DogBreedData> data,
+        Links links
+) {
 }

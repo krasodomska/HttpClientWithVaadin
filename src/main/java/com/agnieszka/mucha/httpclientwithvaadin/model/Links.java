@@ -1,8 +1,9 @@
 package com.agnieszka.mucha.httpclientwithvaadin.model;
 
-public class Links{
-    public String self;
-    public String current;
-    public String next;
-    public String last;
+public record Links(
+        String self,
+        String current,
+        String next,
+        String last
+) {
 }

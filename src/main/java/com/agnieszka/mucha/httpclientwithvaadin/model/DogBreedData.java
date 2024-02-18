@@ -1,7 +1,8 @@
 package com.agnieszka.mucha.httpclientwithvaadin.model;
 
-public class DogBreedData {
-    public String id;
-    public String type;
-    public DogBreed attributes;
+public record DogBreedData(
+        String id,
+        String type,
+        DogBreed attributes
+) {
 }

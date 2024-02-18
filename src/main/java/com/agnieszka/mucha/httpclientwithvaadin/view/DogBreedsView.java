@@ -22,11 +22,11 @@ import java.util.stream.Collectors;
             addToNavbar(title);
 
             Grid<DogBreed> grid = new Grid<>(DogBreed.class, false);
-            grid.addColumn(DogBreed::getName).setHeader("Name");
-            grid.addColumn(DogBreed::getDescription).setHeader("Description");
-            grid.addColumn(DogBreed::getLife).setHeader("Life span");
-            grid.addColumn(DogBreed::getFemale_weight).setHeader("Female_weight");
-            grid.addColumn(DogBreed::getMale_weight).setHeader("Male_weight");
+            grid.addColumn(DogBreed::name).setHeader("Name");
+            grid.addColumn(DogBreed::description).setHeader("Description");
+            grid.addColumn(DogBreed::life).setHeader("Life span");
+            grid.addColumn(DogBreed::female_weight).setHeader("Female_weight");
+            grid.addColumn(DogBreed::male_weight).setHeader("Male_weight");
 
             List<DogBreed> people = DogController.getDogBreeds();
             grid.setItems(people);

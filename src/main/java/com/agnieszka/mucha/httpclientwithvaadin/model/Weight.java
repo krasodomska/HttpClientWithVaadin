@@ -1,8 +1,9 @@
 package com.agnieszka.mucha.httpclientwithvaadin.model;
 
-public class Weight {
-    public int max;
-    public int min;
+public record Weight(
+        int max,
+        int min
+) {
 
     @Override
     public String toString() {
